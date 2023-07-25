@@ -75,7 +75,7 @@ if len(SECRET_KEY) < 50:
     raise ImproperlyConfigured(
         f"SECRET_KEY must be at least 50 characters in length. To generate a suitable key, run the following command:\n"
         f"  python {BASE_DIR}/generate_secret_key.py\n"
-        f"Use the output to update the [SECRET_KEY] section of the configuration file $INSTALL_ROOT/netbox/netbox/configuration.py\n"
+        f"Use the output to update the [SECRET_KEY] section of the configuration file {BASE_DIR}/netbox/configuration.py\n"
         f"https://demo.netbox.dev/static/docs/configuration/required-parameters/#secret_key"
     )
 
